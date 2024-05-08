@@ -8,15 +8,15 @@ public interface ProdutoRepository {
 	
 	/*****CRUD dos produtos****/
 	
-	public Produto listarPorID(int numero);
-	public List<Produto> listarTodosProdutos(int numero, String nomeProduto, float preco);
+	public void listarPorID(int numero);
+	public void listarTodosProdutos();
 	public void cadastrar(Produto Produto);
 	public void atualizar(Produto Produto);
-	public void deletar(Produto Produto);
+	public void deletar(int numero);
 	
 	/*****Métodos dos Produtos****/
 	
-	public List<Produto> buscarPorNome(String Nome);
+	public void buscarPorNome(String Nome);
 	public List<Produto> buscarPorPreco(float precoMinimo, float precoMaximo);
 
 }
