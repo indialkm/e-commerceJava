@@ -4,6 +4,11 @@ import java.util.InputMismatchException;
 import java.io.IOException;
 import java.util.Scanner;
 
+import ecommerce.model.Produto;
+import ecommerce.model.ProdutoEletronico;
+import ecommerce.model.ProdutoVestuario;
+
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -12,6 +17,16 @@ public class Menu {
 		Scanner leia = new Scanner(System.in);
 
 		int opcao = 0;
+		
+		Produto p1 = new Produto(1,"Camisa do Bob", 30, 10,"Amarela");
+		p1.descricao();
+		ProdutoEletronico p2 = new ProdutoEletronico(2,"Celular", 3000, 10,"Preto","Samsung");
+		p2.descricao();
+		ProdutoVestuario p3 = new ProdutoVestuario(3, "Brusinha do Patrick Estrela", 40, 6,"Branca", "Renner");
+		p3.descricao();
+		
+		
+		
 
 		while (true) {
 			System.out.println("----------------------------------------------------");
