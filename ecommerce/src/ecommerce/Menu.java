@@ -18,11 +18,11 @@ public class Menu {
 
 		int opcao = 0;
 		
-		Produto p1 = new Produto(1,"Camisa do Bob", 30, 10,"Amarela");
+		Produto p1 = new Produto(1,"Camisa do Bob", 30.1f , 10,"Amarela");
 		p1.descricao();
-		ProdutoEletronico p2 = new ProdutoEletronico(2,"Celular", 3000, 10,"Preto","Samsung");
+		ProdutoEletronico p2 = new ProdutoEletronico(2,"Celular", 3000.50f, 10,"Preto","Samsung");
 		p2.descricao();
-		ProdutoVestuario p3 = new ProdutoVestuario(3, "Brusinha do Patrick Estrela", 40, 6,"Branca", "Renner");
+		ProdutoVestuario p3 = new ProdutoVestuario(3, "Brusinha do Patrick Estrela", 40.79f, 6,"Branca", "Renner");
 		p3.descricao();
 		
 		
